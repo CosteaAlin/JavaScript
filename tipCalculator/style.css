@@ -1,0 +1,164 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: darkslateblue;
+}
+
+.flex-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-container .container {
+  height: auto;
+  width: 85vh;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.flex-container .container .first-row {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 1px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  height: 7vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6495ED;
+}
+
+.flex-container .container .first-row h2 {
+  text-transform: uppercase;
+}
+
+.flex-container .container .status {
+  width: 80vh;
+  background-color: pink;
+  margin: 2vh auto;
+  border-radius: 7px;
+}
+
+.flex-container .container .status p {
+  text-align: center;
+  color: #C71585;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 2vh 0vh 2vh 0vh;
+}
+
+.flex-container .container p {
+  text-transform: capitalize;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-left: 6vh;
+  margin-top: 5vh;
+}
+
+.flex-container .container .inside-container {
+  margin-left: 7vh;
+  margin-top: -1vh;
+}
+
+.flex-container .container .square {
+  margin-top: -0.8vh;
+  display: inline-block;
+  height: 6.05vh;
+  width: 6vh;
+  background-color: #6495ED;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.flex-container .container .square i {
+  position: relative;
+  top: calc(50% - 10px);
+}
+
+.flex-container .container .input {
+  margin-left: -0.6vh;
+  height: 5.6vh;
+  width: 65vh;
+  border: 1px solid silver;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 20px;
+}
+
+.flex-container .container #service {
+  margin-left: 7vh;
+  height: 5.5vh;
+  width: 71vh;
+  font-size: 20px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  color: #808080;
+}
+
+.flex-container .submit {
+  text-transform: capitalize;
+  margin: 3vh auto;
+  display: block;
+  width: 60vh;
+  height: 5vh;
+  font-size: 25px;
+  background-color: #6495ED;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.flex-container .submit:hover {
+  background-color: darkslateblue;
+}
+
+.flex-container .result {
+  margin-left: 0px !important;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-container .container {
+    width: 95%;
+  }
+  .flex-container .container .status {
+    width: 90%;
+  }
+  .flex-container .container p {
+    margin-left: 2vh;
+  }
+  .flex-container .container .inside-container {
+    margin-left: 2vh;
+  }
+  .flex-container .container .input {
+    width: 80%;
+  }
+  .flex-container .container #service {
+    margin-left: 2vh;
+    width: 88%;
+  }
+  .flex-container .container .submit {
+    width: 32vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

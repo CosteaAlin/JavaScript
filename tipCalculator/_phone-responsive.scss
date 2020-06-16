@@ -1,0 +1,27 @@
+@media only screen and (max-width: 768px)
+{
+   .flex-container{
+       .container{
+           width: 95%;
+           .status{
+               width:90%;
+           }
+           p{
+               margin-left:2vh;
+           }
+           .inside-container{
+               margin-left: 2vh;
+           }
+           .input{
+               width:80%;
+           }
+           #service{
+               margin-left:2vh;
+               width:88%;
+           }
+           .submit{
+               width:32vh;
+           }
+       }
+   }
+}

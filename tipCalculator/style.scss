@@ -1,0 +1,112 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color: darkslateblue;
+}
+.flex-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        height:auto;
+        width:85vh;
+        background-color: white;
+        border-radius:7px; 
+        .first-row{
+            box-sizing: border-box; 
+            letter-spacing: 1px;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            height: 7vh;
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6495ED;
+            h2{
+                text-transform: uppercase;
+            }
+        }
+        .status{
+           width:80vh;
+           background-color: pink;
+           margin: 2vh auto;
+           border-radius: 7px;
+          p{
+              text-align:center;
+              color:#C71585;
+              font-size:15px;
+              font-weight: 100;
+              margin:2vh 0vh 2vh 0vh;
+          }
+        }
+        p{
+            text-transform: capitalize;
+            font-size: 25px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-left:6vh;
+            margin-top:5vh;
+        }
+        .inside-container{
+            margin-left:7vh;
+            margin-top:-1vh;
+        }
+        .square{
+            margin-top:-0.8vh;
+            display: inline-block;
+            height: 6.05vh;
+            width: 6vh;
+            background-color:#6495ED ;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+            text-align: center;
+            vertical-align: middle;
+            i{
+                position:relative;
+                top: calc(50% - 10px);
+                //font-family: fontawesome;
+            }
+        }
+        .input{
+            margin-left:-0.6vh;
+            height: 5.6vh;
+            width:65vh;
+            border:1px solid silver;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            font-size:20px;
+        }
+        #service{
+            margin-left: 7vh;
+            height: 5.5vh;
+            width:71vh;
+            font-size:20px;
+            border:1px solid silver;
+            border-radius:5px;
+            color:#808080;
+        }
+    }
+    .submit{
+        text-transform: capitalize;
+        margin: 3vh auto;
+        display: block;
+        width:60vh;
+        height: 5vh;
+        font-size:25px;
+        background-color:#6495ED;
+        border-radius: 5px;
+        border:none;
+        color:white;
+        cursor: pointer;
+        &:hover{
+            background-color: darkslateblue;
+        }
+    }
+    .result{
+        margin-left:0px !important; 
+        text-align: center;
+    }
+}
+@import "./phone-responsive";
