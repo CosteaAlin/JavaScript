@@ -1,0 +1,124 @@
+body{
+    margin:0px;
+    padding:0px;
+    background:rgb(226, 79, 104);
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    h1{
+        color:white;
+        font-size:35px;
+        letter-spacing: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    height: auto;
+    .container{
+    .error{
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+         p{
+             font-size: 25px;
+             color:red;
+             padding: 10px;
+             font-family: Arial, Helvetica, sans-serif;
+         }
+    }
+    .input-container{
+        display:flex;
+    #input-task{
+        width:225px;
+        height: 35px;
+        border:none;
+        font-size: 23px;
+        padding: 5px;
+        outline: none;
+    }
+    .todo-button{
+        background-color: #6495ED;
+        width:40px;
+        height: 45px;
+        border:none;
+        cursor: pointer;
+        color:white;
+        outline: none;
+        &:hover{
+            background-color: white;
+            color:#5F9EA0;
+        }
+    }
+    .selection{
+         display: flex;
+         align-items: center;
+    .filter{
+        border:none;
+        outline:none;
+        height: 45px;
+        font-size: 18px;
+        width:130px;
+        margin-left:15px;
+        color:rgb(226, 79, 104);
+        cursor:pointer;
+        option{
+            cursor:pointer;  
+        }
+    }
+  }
+ }
+}
+}
+.todo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .todo-list{
+        list-style:none;
+    }
+    .todo{
+        min-width: 300px;
+        width:auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        margin: 10px;
+        font-size:25px;
+        align-items: center;
+        margin-right:50px;
+        padding-left: 3px;
+        transition:0.5s ease;
+        li{
+            flex:1;
+        }
+        .complete-button, .delete-button{
+            
+            color:white;
+            border:none;
+            padding:15px;
+            background-color: orange;
+            cursor:pointer;
+            outline: none;
+        }
+        .complete-button{
+            background-color: green;
+            margin-left:3px;
+        }
+    }
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.drop{
+    transform:translateX(150px);
+    opacity: 0;
+}
+@import './phone-responsive';

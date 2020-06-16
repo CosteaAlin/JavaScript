@@ -1,0 +1,181 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #e24f68;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+header h1 {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  height: auto;
+}
+
+.flex-container .container .error {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.flex-container .container .error p {
+  font-size: 25px;
+  color: red;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container .container .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-container .container .input-container #input-task {
+  width: 225px;
+  height: 35px;
+  border: none;
+  font-size: 23px;
+  padding: 5px;
+  outline: none;
+}
+
+.flex-container .container .input-container .todo-button {
+  background-color: #6495ED;
+  width: 40px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+
+.flex-container .container .input-container .todo-button:hover {
+  background-color: white;
+  color: #5F9EA0;
+}
+
+.flex-container .container .input-container .selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-container .container .input-container .selection .filter {
+  border: none;
+  outline: none;
+  height: 45px;
+  font-size: 18px;
+  width: 130px;
+  margin-left: 15px;
+  color: #e24f68;
+  cursor: pointer;
+}
+
+.flex-container .container .input-container .selection .filter option {
+  cursor: pointer;
+}
+
+.todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-container .todo-list {
+  list-style: none;
+}
+
+.todo-container .todo {
+  min-width: 300px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  margin: 10px;
+  font-size: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+  padding-left: 3px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.todo-container .todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.todo-container .todo .complete-button, .todo-container .todo .delete-button {
+  color: white;
+  border: none;
+  padding: 15px;
+  background-color: orange;
+  cursor: pointer;
+  outline: none;
+}
+
+.todo-container .todo .complete-button {
+  background-color: green;
+  margin-left: 3px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.drop {
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-container {
+    margin-top: 10px;
+  }
+  .flex-container .input-container input {
+    width: 160px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

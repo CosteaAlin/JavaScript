@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDoApp</title>
+</head>
+<body>
+    <header>
+        <h1>
+            To Do App
+        </h1>
+    </header>
+     <div class="flex-container">
+         <div class="container">
+            <p class="error"></p>
+            <div class="input-container">
+                <input type="text" id="input-task" placeholder="Enter a task">
+                <button class="todo-button">
+                   <i class="fas fa-plus"></i>
+                </button>
+                <div class="selection">
+                    <select class="filter">
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="uncompleted">Uncompleted</option>
+                    </select>
+                </div>
+            </div>
+         </div>   
+        </div>
+        <div class="todo-container">
+            <ul class="todo-list">
+            </ul>
+        </div>
+</body>
+<script src="script.js"></script>
+</html>
