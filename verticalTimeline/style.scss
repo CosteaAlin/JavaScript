@@ -1,0 +1,94 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-color:#008B8B;
+}
+.head{
+    height: 85vh;
+    background-color: #DB7093;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color:white;
+        font-size:8vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+.timeline{
+    ul{
+        padding:7vh 0vh;
+        li{
+            list-style-type: none;
+            position: relative;
+            padding-top: 7vh;
+            margin:0 auto;
+            width:0.8vh;
+            background-color: white;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0%;
+                transform: translateX(-50%);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color:inherit;
+                transition: background 1s ease-in-out;
+            }
+    
+            &:nth-child(odd) div{
+                left:5vh;
+                transform: translate3d(200px, 0, 0);
+            }
+
+            &:nth-child(odd) div::before{
+                left: -15px;
+                border-width: 8px 16px 8px 0;
+                border-color:transparent #DB7093 transparent transparent;
+            }
+
+            &:nth-child(even) div{
+                left:-79vh;
+                transform: translate3d(-200px, 0 , 0);
+            }
+
+            &:nth-child(even) div::before{
+                  right: -15px;
+                  border-width: 8px 0px 8px 16px;
+                  border-color: transparent transparent transparent #DB7093;
+            }
+
+            &.in-view::after{
+                background-color: #DB7093;
+            }
+            &.in-view div{
+                transform: none;
+                visibility: visible;
+                opacity: 1;
+            }
+            div{    
+                position:relative;
+                bottom:0px;
+                width:70vh;
+                padding:2.5vh;
+                background-color: #DB7093;
+                color:white;
+                font-size:18px;
+                visibility: hidden;
+                opacity:0;
+                transition: all 1s ease-in-out;
+                &::before{
+                    content:'';
+                    position:absolute;
+                    bottom:1vh;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                }
+            }
+        }
+    }   
+}
+@import"./phone-responsive";

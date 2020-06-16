@@ -1,0 +1,129 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #008B8B;
+}
+
+.head {
+  height: 85vh;
+  background-color: #DB7093;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head h1 {
+  color: white;
+  font-size: 8vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timeline ul {
+  padding: 7vh 0vh;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  padding-top: 7vh;
+  margin: 0 auto;
+  width: 0.8vh;
+  background-color: white;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: inherit;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 5vh;
+  -webkit-transform: translate3d(200px, 0, 0);
+          transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #DB7093 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -79vh;
+  -webkit-transform: translate3d(-200px, 0, 0);
+          transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0px 8px 16px;
+  border-color: transparent transparent transparent #DB7093;
+}
+
+.timeline ul li.in-view::after {
+  background-color: #DB7093;
+}
+
+.timeline ul li.in-view div {
+  -webkit-transform: none;
+          transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0px;
+  width: 70vh;
+  padding: 2.5vh;
+  background-color: #DB7093;
+  color: white;
+  font-size: 18px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 1vh;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 5vh;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0px;
+    border-color: transparent #DB7093 transparent transparent;
+  }
+}
+/*# sourceMappingURL=style.css.map */

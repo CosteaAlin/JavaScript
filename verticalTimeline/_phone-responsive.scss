@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px)
+{   
+    .timeline ul li{
+        margin-left:20px;
+        div{
+            width:250px;
+        }
+        &:nth-child(even) div{
+            left: 5vh;
+        }
+        &:nth-child(even) div::before{
+            left:-15px;
+            border-width:8px 16px 8px 0px;
+            border-color:transparent #DB7093 transparent transparent;
+        }
+    }
+}
